@@ -1,0 +1,5 @@
+/* css越晚引入的樣式權限最高 */
+/* JS使用 element.classList.add('hidden')來隱藏元件 */
+.hidden {
+   display: none;
+ }

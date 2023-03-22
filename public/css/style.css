@@ -1,0 +1,154 @@
+:root{
+  /* 顏色設定 */
+  --dark-grey : #181818;
+  --light-white : #EFEFEF;
+  --red:#f21c21;
+  --light-red :#ff494d;
+  --font-color: #EFEFEF;
+  --bg-color:radial-gradient(#a5caef, #afc4f9);
+  --el-color:#103985;
+  --menu-bg-color:#5377cc;
+  --disable-color:#a0a0a0;
+  --chat-font-size:30px;
+} 
+*{
+  /* 字體設定 */
+  font-family: RocknRoll One;
+  font-size: 24px;
+}
+
+body {  
+  background: var(--bg-color);
+  color: var(--font-color);
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--font-color);
+  background: var(--el-color);
+  font-size: 1rem;
+  outline: 0
+}
+
+/* 頁面上方元件 */
+img[id="welcome"]{
+  max-width: 20vw;
+}
+
+h1 {  
+  font-size: 2.5em;
+}
+#welcome{
+  padding: 0;
+  margin-top: 0;
+  border: 0;
+}
+
+#txtShow{
+  width: 80vw;
+  height: 40vh;
+  font-size: 1rem;
+
+  padding: 0;
+  border-radius: 20px 20px 0 0 ;
+  border: 3px var(--el-color) solid;
+  margin: auto;
+}
+
+#chat-window{
+  width: 80vw;
+  height: 40vh;
+  overflow-y: scroll;
+
+  padding: 0;
+  border-radius: 20px 20px 0 0 ;
+  border: 3px var(--el-color) solid;
+  margin: auto;
+
+  font-size: 1rem;
+}
+/* 使用者登入表單 */
+#userInfoForm{
+  display: block;
+  width: 80vw;
+  margin: auto;
+  border: 3px solid var(--el-color);
+  border-radius: 20px;
+}
+
+#userInfoForm label{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20%;
+  margin :10px 0;
+  border: 0;
+  padding: 0;
+
+  font-size: 1rem;
+  color: var(--el-color);
+}
+
+#userInfoForm input[type="text"],
+#userInfoForm input[type="file"]{
+  display: inline;
+  box-sizing: border-box;
+  width: 79%;
+
+  margin :2px 0;
+  border: 0;
+  padding: 0;
+  
+  font-size: 1rem;
+  color: var(--el-color);
+  background-color: transparent;
+  outline: transparent;
+}
+
+/* 聊天室相關 */
+.chatLine{
+  display: block;
+  text-align: left;
+}
+.chatAvatar{
+  display: inline-block;
+  max-height: var(--chat-font-size);
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.chatMsg{
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font-size: var(--chat-font-size);
+  color: var(--el-color);
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  border: 3px var(--el-color) solid;
+  margin :auto;
+}
+
+#txtInput{
+  display: inline-block;
+  align-items: center;
+  width: 80%;
+  font-size: 1rem;
+  padding: 0;
+  border: 0;
+
+}
+
+#btnSend{
+  width: 40%;
+}

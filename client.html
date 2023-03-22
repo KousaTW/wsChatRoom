@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>すいせい広場</title>
+   <link rel="icon" href="/images/icon_Suisei.jpg">
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
+   <link rel="stylesheet" type="text/css" href="/css/function.css">
+   <script type="module" src="/js/client.js"></script>
+</head>
+<body>   
+   <img id="welcome" src="/images/SuiseiSD.png" alt="">
+   <h1 id ='welcome'>すいせい広場</h1>
+   <!-- 上傳頭像和名稱表單 -->
+	<form id="userInfoForm">
+      <div>
+         <label for="userName">名字：</label>
+         <input type="text" id="userName" name="userName" required maxlength="20">
+      </div>
+      <div>
+         <label for="userAvatar">頭像：</label>
+         <input type="file" id="userAvatar" name="userAvatar" accept="image/*" required>
+      </div>
+      <div id="preview">
+         <label>聊天室呈現 :</label>
+         <img id="avatarPreview" class="chatAvatar">
+         <p id="namePreview" class="chatMsg"></p>
+      </div>
+		<button type="submit">Join Chat Room</button>
+	</form>
+   
+   <!-- 聊天室訊息顯示區域 -->
+   <!-- <textarea id="txtShow" disabled></textarea>    -->
+   <div id="chat-window">
+      <ul id="chat-messages"></ul>
+    </div>
+   <!-- 訊息輸入區域 -->
+   <div class="inputArea">
+      <input id="txtInput" type="text">
+      <button id="btnSend">送出</button>
+   </div>
+</body>
+</html>
